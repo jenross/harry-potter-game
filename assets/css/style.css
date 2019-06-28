@@ -4,11 +4,28 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black; 
-    color: gold; 
+    color: silver; 
+    background: url('../images/dark-forest-hp-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
     font-size: 45px; 
     text-align: center; 
+}
+
+#directions, #choose-text, #wizard-text, #challenger-text, #current-status {
+    font-size: 25px; 
+}
+
+#begin-game, #expelliarmus {
+    background-color: silver; 
+    border: black;  
+}
+
+#begin-game:hover, #expelliarmus:hover {
+    background-color: #222;
 }

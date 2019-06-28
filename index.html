@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HP Wand Duel Game</title>
+    <title>HP Wizard Duel Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -12,14 +12,76 @@
 </head>
 <body class="d-flex flex-column h-100">
     <main role="main" class="flex-shrink-0">
-        <h1 class="mt-3 mx-auto">Harry Potter's Wand Duel Game</h1>
+        <!--Main container-->
+        <div class="container-fluid px-lg-5">
+            <!--Constant header-->
+            <div class="row">
+                <div class="col">
+                <h1 class="mt-3 mx-auto">HP Wizard Duel</h1>
+                </div>
+            </div>
+            <!--Directions that will disappear once button is clicked to start the game.-->
+            <div class="row mx-lg-n5 mt-5">
+                <div class="col py-3 px-lg-5">
+                    <p id="directions">Select your wizard and a challenger for your wand duel. Choose wisely and defeat all remaining wizards before they disarm you.</p>
+                </div>
+            </div>
+            <!--Button for beginning the game-->
+            <div class="row mt-5">
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-lg d-block mx-auto" id="begin-game">Accio, wand!</button>
+                </div>
+            </div>
+            <!--Displays wizards to choose from once the game has begun-->
+            <div class="row">
+                <div class="col">
+                    <p class="text-center" id="choose-text"></p> 
+                </div>
+                <div class="col">
+                    <div id="wizards">
 
+                    </div>
+                </div>
+            </div>
+            <!--Expelliarmus button for attacking-->
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-lg d-block mx-auto" id="expelliarmus">Expelliarmus!</button>
+                </div>
+            </div>
+            <!--Wand Duel Zone-->
+            <div class="row">
+                <div class="col text-left">
+                    <p id="wizard-text">Wizard</p>
+                </div>
+                <div class="col">
+                    <div id="chosen-wizard"></div>
+                </div>
+                <div class="col text-right">
+                    <p id="challenger-text">Challenger</p>
+                </div>
+                <div class="col">
+                    <div id="chosen-challenger"></div>
+                </div>
+            </div>
+            <!--Win, Loss, Status Displays-->
+            <div class="row">
+                <div class="col text-center">
+                    <p id="current-status"></p>
+                </div>
+            </div>
+        </div>     
     </main>
+    
     <footer role="contentinfo" class="footer mt-auto mx-auto py-3">
         <div class="container">
             <span class="text-muted">Copyright © 2019 Jennifer Ross</span>
         </div>
     </footer>
+
     <script src="assets/js/game.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
