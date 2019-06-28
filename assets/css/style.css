@@ -28,4 +28,5 @@ h1 {
 
 #begin-game:hover, #expelliarmus:hover {
     background-color: #222;
+    border: black;
 }

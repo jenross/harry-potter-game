@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Play a Harry Potter wizard duel role-playing game.">
+    <meta name="author" content="Jennifer Ross">
     <title>HP Wizard Duel Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,8 +30,8 @@
             </div>
             <!--Button for beginning the game-->
             <div class="row mt-5">
-                <div class="col">
-                    <button type="button" class="btn btn-primary btn-lg d-block mx-auto" id="begin-game">Accio, wand!</button>
+                <div class="col text-center">
+                    <button type="button" role="button" data-toggle="button" class="btn btn-primary btn-lg btn-outline-dark active" id="begin-game">Accio, wand!</button>
                 </div>
             </div>
             <!--Displays wizards to choose from once the game has begun-->
@@ -45,8 +47,8 @@
             </div>
             <!--Expelliarmus button for attacking-->
             <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-primary btn-lg d-block mx-auto" id="expelliarmus">Expelliarmus!</button>
+                <div class="col text-center">
+                    <button type="button" role="button" data-toggle="button" class="btn btn-primary btn-attack btn-lg btn-outline-dark active" aria-pressed="true" id="expelliarmus">Expelliarmus!</button>
                 </div>
             </div>
             <!--Wand Duel Zone-->
@@ -70,9 +72,10 @@
                     <p id="current-status"></p>
                 </div>
             </div>
-        </div>     
+        </div>   
+
     </main>
-    
+
     <footer role="contentinfo" class="footer mt-auto mx-auto py-3">
         <div class="container">
             <span class="text-muted">Copyright © 2019 Jennifer Ross</span>
