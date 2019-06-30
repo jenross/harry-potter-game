@@ -18,15 +18,21 @@ h1 {
 }
 
 #directions, #choose-text, #wizard-text, #challenger-text, #current-status {
-    font-size: 25px; 
+    font-size: 35px; 
 }
 
 #begin-game, #expelliarmus {
     background-color: silver; 
     border: black;  
+    font-size: 25px; 
 }
 
 #begin-game:hover, #expelliarmus:hover {
     background-color: #222;
     border: black;
+}
+
+#header-image {
+    width: auto;
+    height: auto;
 }
