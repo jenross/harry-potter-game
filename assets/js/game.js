@@ -6,16 +6,18 @@ $(document).ready(function() {
     $("#wizard-text").html("");
     $("#expelliarmus").hide();
 
-    let initialMusic = new Audio('assets/sound/prologue.mp3');
-    initialMusic.play(); 
+   let accioWand = new Audio('assets/sound/accio-wand.wav');
+    let expelliarmusSound = new Audio('assets/sound/expelliarmus.mp3');
 
     $("#begin-game").on("click", function() {
+        accioWand.play();
         $("#directions").html("");
         $(this).hide();
         $("#expelliarmus").show();
         $("#choose-text").html("Choose a wizard");
         $("#wizard-text").html("Wizard");
         $("#challenger-text").html("Challenger");
+        initialize();
     });
 });
 
@@ -27,4 +29,14 @@ function initialize() {
     {name: "Lord Voldemort", health: 120, attackPower: 10, counterAttackPower: 20, img: "assets/images/voldemort.png"},
     {name: "Severus Snape", health: 110, attackPower: 8, counterAttackPower: 18, img: "assets/images/snape.png"}]; 
 
+    for (let i = 0; i <wizardOptions.length; i++){
+        let wizardDisplays = $("<img>");
+        wizardDisplays.addClass("each-wizard-image");
+        wizardDisplays.attr("name", wizardOptions[i].name);
+        wizardDisplays.attr("health-value", wizardOptions[i].health);
+        wizardDisplays.attr("attack-power", wizardOptions[i].attackPower);
+        wizardDisplays.attr("counter-attack-power", wizardOptions[i].counterAttackPower);
+        wizardDisplays.attr("src", wizardOptions[i].img);
+        $("#wizards").append(wizardDisplays);
+    }
 }

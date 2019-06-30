@@ -36,3 +36,14 @@ h1 {
     width: auto;
     height: auto;
 }
+
+.each-wizard-image {
+    width: 200px;
+    height: 200px; 
+    border: 2px solid silver; 
+}
+
+.each-wizard-image:hover {
+    cursor: pointer;
+}
+
