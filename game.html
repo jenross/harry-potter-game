@@ -22,18 +22,45 @@
                 <img src="assets/images/wizard_duel_header.png" class="mt-3 mx-auto img-fluid" id="header-image">
                 </div>
             </div>
-            <!--Directions that will disappear once button is clicked to start the game.-->
-            <div class="row mx-lg-n5 mt-5">
-                <div class="col py-3 px-lg-5 text-center">
-                    <p id="directions">Select your wizard and a challenger for your wand duel. Choose wisely and defeat all remaining wizards before they disarm you.</p>
-                </div>
-            </div>
-            <!--Button for beginning the game-->
-            <div class="row mt-5">
+            <!--Displays wizards to choose from once the game has begun-->
+            <div class="row">
                 <div class="col text-center">
-                    <a role="button" class="btn btn-primary btn-lg btn-outline-dark active" id="begin-game" href="game.html">Accio, wand!</a>
+                    <p id="choose-text"></p> 
+                </div>
+                <div class="col text-center">
+                    <div id="wizards">
+
+                    </div>
                 </div>
             </div>
+            <!--Expelliarmus button for attacking-->
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" role="button" data-toggle="button" class="btn btn-primary btn-attack btn-lg btn-outline-dark active" aria-pressed="true" id="expelliarmus">Expelliarmus!</button>
+                </div>
+            </div>
+            <!--Wand Duel Zone-->
+            <div class="row">
+                <div class="col text-left">
+                    <p id="wizard-text">Wizard</p>
+                </div>
+                <div class="col">
+                    <div id="chosen-wizard"></div>
+                </div>
+                <div class="col text-right">
+                    <p id="challenger-text">Challenger</p>
+                </div>
+                <div class="col">
+                    <div id="chosen-challenger"></div>
+                </div>
+            </div>
+            <!--Win, Loss, Status Displays-->
+            <div class="row">
+                <div class="col text-center">
+                    <p id="current-status"></p>
+                </div>
+            </div>
+        </div>   
         <audio src="assets/sound/prologue.mp3" autoplay>Your browser does not support the <code>audio</code> element.</audio>
     </main>
 

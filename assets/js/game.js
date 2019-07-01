@@ -1,25 +1,10 @@
-$(document).ready(function() {
+let accioWand = new Audio('assets/sound/accio-wand.wav');
+let expelliarmusSound = new Audio('assets/sound/expelliarmus.mp3');
 
-    //hide until game has begun
-    $("#choose-text").html("");
-    $("#challenger-text").html("");
-    $("#wizard-text").html("");
-    $("#expelliarmus").hide();
-
-   let accioWand = new Audio('assets/sound/accio-wand.wav');
-    let expelliarmusSound = new Audio('assets/sound/expelliarmus.mp3');
-
-    $("#begin-game").on("click", function() {
-        accioWand.play();
-        $("#directions").html("");
-        $(this).hide();
-        $("#expelliarmus").show();
-        $("#choose-text").html("Choose a wizard");
-        $("#wizard-text").html("Wizard");
-        $("#challenger-text").html("Challenger");
-        initialize();
-    });
+$("#begin-game").on("click", function() {
+    accioWand.play();
 });
+
 
 function initialize() {
     
@@ -39,4 +24,8 @@ function initialize() {
         wizardDisplays.attr("src", wizardOptions[i].img);
         $("#wizards").append(wizardDisplays);
     }
+}
+
+function increaseAttackPower() {
+
 }
