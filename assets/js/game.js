@@ -14,7 +14,8 @@ function initialize() {
     
     $("#chosen-wizard").empty();
     $("#chosen-challenger").empty(); 
-    
+    $(".duel-image").empty(); 
+
     wizardChosen = false;
     challengerChosen = false; 
 
@@ -56,6 +57,7 @@ function handleExpelliarmus() {
         } else {
             expelliarmusSound.play();
             $("#current-status").text("");
+            $(".duel-image").prepend($("<img>", {id: "duel-wand-image", src: "assets/images/duel-wand-image.png"}));
         }
     });
 }

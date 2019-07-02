@@ -59,3 +59,13 @@ form {
     height: 250px;
     width: 250px;
 }
+
+#duel-wand-image {
+    width: 625px;
+    height: 200px; 
+    margin-top: 50px;
+    margin-left: 0; 
+    margin-right: 0; 
+    padding: 0; 
+    opacity: 0.8;  
+}
