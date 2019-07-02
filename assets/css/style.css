@@ -37,13 +37,25 @@ h1 {
     height: auto;
 }
 
-.each-wizard-image {
-    width: 200px;
-    height: 200px; 
-    border: 2px solid silver; 
+.wizard-image {
+    width: 150px;
+    height: 150px; 
+    border: 1px solid silver;
 }
 
-.each-wizard-image:hover {
+.wizard-image:hover {
     cursor: pointer;
 }
 
+label {
+    font-size: 20px;
+    padding: 10px; 
+    color: black; 
+}
+
+form {
+    background-color: silver; 
+    padding: 10px; 
+    height: 250px;
+    width: 250px;
+}
