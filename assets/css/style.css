@@ -21,13 +21,13 @@ h1 {
     font-size: 35px; 
 }
 
-#begin-game, #expelliarmus {
+#begin-game, #expelliarmus, #play-again {
     background-color: silver; 
     border: black;  
     font-size: 25px; 
 }
 
-#begin-game:hover, #expelliarmus:hover {
+#begin-game:hover, #expelliarmus:hover, #play-again:hover {
     background-color: #222;
     border: black;
 }
